@@ -1,4 +1,4 @@
-jenkins-primary:
+jenkins:
   image: "jenkins:2.0"
   ports:
     - "8080:8080"
@@ -7,7 +7,6 @@ jenkins-primary:
     io.rancher.container.hostname_override: container_name
   volumes_from:
     - jenkins-datavolume
-  entrypoint: /usr/share/jenkins/rancher/jenkins.sh
 jenkins-datavolume:
   image: "busybox"
   volumes:
