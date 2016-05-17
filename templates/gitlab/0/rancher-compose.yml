@@ -1,6 +1,6 @@
 .catalog:
   name: Gitlab Community
-  version: 8.7.0-ce.0
+  version: 8.8.0-rc1.ce.0
   description: |
     Gitlab CE is a free GitHub alternative
   minimum_rancher_version: v0.56.0
