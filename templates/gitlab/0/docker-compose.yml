@@ -5,7 +5,7 @@ gitlab-server:
   labels:
     io.rancher.sidekicks: gitlab-data
   hostname: ${gitlab_hostname}
-  image: gitlab/gitlab-ce:8.7.0-ce.0
+  image: gitlab/8.8.0-rc1.ce.0
   volumes_from:
   - gitlab-data
 
