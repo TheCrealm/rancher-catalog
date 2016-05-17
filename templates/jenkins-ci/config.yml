@@ -1,5 +1,5 @@
 name: Jenkins
 description: |
   Jenkins CI server (LTS)
-version: 2.3 (sudo version)
+version: 2.3
 category: Continuous Integration
