@@ -1,0 +1,5 @@
+.catalog:
+  name: Jenkins
+  version: 2.3 (sudo version)
+  description: |
+    Jenkins CI management server.
