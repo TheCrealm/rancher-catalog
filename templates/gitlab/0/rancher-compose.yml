@@ -1,10 +1,10 @@
 .catalog:
   name: Gitlab Community
-  version: 8.8.0-rc1.ce.0
+  version: 8.8.0 RC1
   description: |
     Gitlab CE is a free GitHub alternative
   minimum_rancher_version: v0.56.0
-  maintainer: "Alexis Ducastel <alexis@ducastel.net>"
+  maintainer: "TheCrealm <crealm@gmx.de>"
   uuid: gitlab-0
   questions:
     - variable: "gitlab_hostname"
