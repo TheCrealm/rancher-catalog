@@ -6,6 +6,7 @@ gitlab-server:
   labels:
     io.rancher.sidekicks: gitlab-data
   hostname: ${gitlab_hostname}
+  restart: always
   image: gitlab/gitlab-ce:8.9.0-ce.0
   volumes_from:
   - gitlab-data

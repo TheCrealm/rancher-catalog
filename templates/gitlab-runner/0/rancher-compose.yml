@@ -1,0 +1,17 @@
+.catalog:
+  name: Gitlab Runner
+  version: 1.2
+  description: |
+    The runner for gitlab
+  minimum_rancher_version: v0.56.0
+  maintainer: "TheCrealm <crealm@gmx.de>"
+  uuid: gitlab-runner-0
+
+gitlab-runner:
+  scale: 1
+  retain_ip: true
+
+gitlab-data:
+  scale: 1
+  retain_ip: true
+
