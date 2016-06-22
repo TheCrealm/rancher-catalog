@@ -1,5 +1,5 @@
 gitlab-runner:
-  image: gitlab/gitlab-runner:v1.2.0
+  image: gitlab/gitlab-runner:v1.3.0
   volumes_from:
     - gitlab-runner-data
 
