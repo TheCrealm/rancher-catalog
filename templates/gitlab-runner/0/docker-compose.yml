@@ -1,6 +1,6 @@
 gitlab-runner:
   image: gitlab/gitlab-runner:v1.2.0
-  restart:always
+  restart: always
   volumes_from:
     - gitlab-runner-data
 
