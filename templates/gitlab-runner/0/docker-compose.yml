@@ -9,7 +9,8 @@ gitlab-runner-data:
   labels:
     io.rancher.container.start_once: 'true'
   entrypoint:
-  - /bin/true
+    - /bin/true
   hostname: gitlab-runner-data
   image: busybox
-  - /srv/gitlab-runner/config:/etc/gitlab-runner
+  volumes:
+    - /srv/gitlab-runner/config:/etc/gitlab-runner
