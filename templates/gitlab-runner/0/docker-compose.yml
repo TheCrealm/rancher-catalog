@@ -8,7 +8,7 @@ gitlab-runner-data:
     io.rancher.container.start_once: 'true'
   entrypoint:
   - /bin/true
-  hostname: runnerdata
+  hostname: gitlab-runner-data
   image: busybox
   volumes:
   - /var/run/docker.sock:/var/run/docker.sock
