@@ -11,7 +11,7 @@ gitlab-runner:
   scale: 1
   retain_ip: true
 
-gitlab-data:
+gitlab-runner-data:
   scale: 1
   retain_ip: true
 
