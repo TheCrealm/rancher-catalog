@@ -1,5 +1,7 @@
 gitlab-runner:
   image: gitlab/gitlab-runner:v1.3.0
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
   volumes_from:
     - gitlab-runner-data
 
@@ -10,6 +12,4 @@ gitlab-runner-data:
   - /bin/true
   hostname: gitlab-runner-data
   image: busybox
-  volumes:
-  - /var/run/docker.sock:/var/run/docker.sock
   - /srv/gitlab-runner/config:/etc/gitlab-runner
