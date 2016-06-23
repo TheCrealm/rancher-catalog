@@ -4,9 +4,7 @@ nexus-server:
   labels:
     io.rancher.sidekicks: nexus-data
   hostname: ${nexus_hostname}
-  image: sonatype/nexus:2.13.0-01
-  entrypoint:
-  - mkdir /etc/nexus && chown -R 200 /etc/nexus
+  image: sonatype/nexus3:3.0.0
   volumes_from:
   - nexus-data
 
@@ -15,6 +13,8 @@ nexus-data:
     io.rancher.container.start_once: 'true'
   hostname: nexusdata
   image: busybox
+  entrypoint:
+  - /bin/true
   volumes:
-  - /etc/nexus:/sonatype-work
+  - /etc/nexus:/nexus-data
 

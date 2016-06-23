@@ -1,6 +1,6 @@
 .catalog:
   name: Nexus Maven Repository
-  version: 2.13.0-01
+  version: 3.0.0
   description: |
     Maven repository hosting
   minimum_rancher_version: v0.56.0
