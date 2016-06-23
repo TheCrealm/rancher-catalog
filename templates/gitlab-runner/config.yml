@@ -1,5 +1,0 @@
-name: Gitlab Runner
-description: |
-  The Runner for gitlab
-version: 1.3
-category: Versioning

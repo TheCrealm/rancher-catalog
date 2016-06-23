@@ -1,0 +1,30 @@
+.catalog:
+  name: Nexus Maven Repository
+  version: 2.13.0-01
+  description: |
+    Maven repository hosting
+  minimum_rancher_version: v0.56.0
+  maintainer: "TheCrealm <crealm@gmx.de>"
+  uuid: nexus-0
+  questions:
+    - variable: "nexus_hostname"
+      description: "Nexus hostname"
+      label: "Hostname:"
+      required: true
+      default: "repo.example.com"
+      type: "string"
+
+nexus-server:
+  scale: 1
+  retain_ip: true
+  health_check:
+    port: 8081
+    interval: 30000
+    unhealthy_threshold: 3
+    strategy: recreate
+    response_timeout: 2000
+    healthy_threshold: 2
+
+nexus-data:
+  scale: 1
+  retain_ip: true

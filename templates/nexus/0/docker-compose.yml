@@ -1,0 +1,20 @@
+nexus-server:
+  ports:
+  - 8081:8081/tcp
+  labels:
+    io.rancher.sidekicks: nexus-data
+  hostname: ${nexus_hostname}
+  image: sonatype/nexus:2.13.0-01
+  volumes_from:
+  - nexus-data
+
+nexus-data:
+  labels:
+    io.rancher.container.start_once: 'true'
+  entrypoint:
+  - /bin/true
+  hostname: nexusdata
+  image: busybox
+  volumes:
+  - /etc/nexus:/sonatype-work
+
